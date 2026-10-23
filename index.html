@@ -10,7 +10,7 @@
 <link rel="manifest" href="manifest.json" />
 <link rel="apple-touch-icon" href="icon-192.png" />
 <title>Last Mile - H Joel Logistics</title>
-<meta name="app-version" content="wizard-serial-unlimited-v6">
+<meta name="app-version" content="wizard-serial-unlimited-v6-logo-fix">
 <script src="https://unpkg.com/html5-qrcode"></script>
 <style>
 
@@ -202,7 +202,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 
 <body>
 <div class="app">
   <header class="brand">
-    <img src="logo.png" alt="H JOEL LOGISTICS">
+    <img src="./icon-192.png" alt="H JOEL LOGISTICS" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='./logo.png';}else{this.style.display='none';document.getElementById('brandFallback').style.display='block';}">
+    <div id="brandFallback" style="display:none;font-weight:900;font-size:21px;color:#ff6500">H JOEL LOGISTICS</div>
     <div class="sub">LAST MILE</div>
   </header>
 
